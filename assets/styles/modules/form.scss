@@ -13,11 +13,33 @@ input[type="email"]:focus {
 	outline: none;
 }
 
-.radio {
+.radio span {
 	font-family: $paragraph;
 	font-size: 1.6em;
 	line-height: 1.5em;
 	color: $darkRed;
+	text-transform: none;
+}
+
+.radio span:hover {
+	cursor: pointer;
+}
+
+.radio span::before {
+	border: 1px solid $darkRed;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.radio span::after {
+	border-radius: 2px;
+	background-color: $darkRed;
+	opacity: 0;
+}
+
+input[type="radio"]:checked + label span::after {
+	opacity: 1;
+	background-color: $darkPurple;
 }
 
 input[type="submit"] {
@@ -29,4 +51,21 @@ input[type="submit"] {
 	font-size: 2em;
 	text-transform: uppercase;
 	padding: 10px 30px;
+}
+
+input[type="submit"]:focus {
+	border: 1px solid $darkRed;
+	outline: none;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+@media (min-width: 1024){
+
+	input[type="radio"]:hover + label span::after {
+		opacity: 0.6;
+		background-color: $darkRed;
+	}
 }

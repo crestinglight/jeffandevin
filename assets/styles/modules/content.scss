@@ -9,17 +9,41 @@
 	font-size: 2em;
 	text-align: center;
 	color: $darkRed;
+	text-transform: uppercase;
+}
+
+.content h2 {
+	font-family: $submit;
+	color: $darkPurple;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	text-align: center;
 }
 
 .content p {
+	font-family: $block;
+	color: $red;
+	font-size: 1.3em;
+	text-align: center;
+	line-height: 1.1em;
+}
+
+.content p.accent {
 	font-family: $paragraph;
 	font-size: 1.7em;
 	color: $darkPurple;
+	text-align: left;
+}
+
+.content a {
+	text-decoration: underline;
+	color: $darkRed;
 }
 
 .content span {
 	text-transform: uppercase;
 	font-family: $thinScript;
 	font-size: 1.5em;
+	line-height: 1.4em;
 	color: $midPurple;
 }

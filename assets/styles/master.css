@@ -82,10 +82,14 @@ svg {
   display: block; }
 
 .l-content {
-  padding: 60px 50px; }
+  padding: 30px 50px; }
 
 .l-content h1 {
+  margin-top: 80px;
   margin-bottom: 40px; }
+
+.l-content h2 {
+  margin-bottom: 20px; }
 
 .l-content p {
   margin-bottom: 30px; }
@@ -112,10 +116,38 @@ form span {
 .l-radio {
   display: flex;
   flex-direction: column;
-  text-align: left; }
+  text-align: left;
+  padding-left: 25px; }
+
+.l-radio label {
+  position: relative;
+  padding-left: 5px; }
+
+.l-radio span::before,
+.l-radio span::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: 0;
+  margin: auto; }
+
+.l-radio span::before {
+  left: -25px;
+  width: 20px;
+  height: 20px; }
+
+.l-radio span::after {
+  left: -20px;
+  width: 10px;
+  height: 10px; }
 
 form input[type="submit"] {
   margin-top: 30px; }
+
+.l-icon {
+  max-width: 30px;
+  display: block;
+  margin: 0px auto 30px; }
 
 .header {
   background-color: rgba(0, 0, 0, 0.5);
@@ -160,40 +192,79 @@ svg {
   font-family: "Fredericka the Great", cursive;
   font-size: 2em;
   text-align: center;
-  color: #803018; }
+  color: #5e2010;
+  text-transform: uppercase; }
+
+.content h2 {
+  font-family: "Crushed", cursive;
+  color: #491048;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  text-align: center; }
 
 .content p {
+  font-family: "Josefin Sans", serif;
+  color: #991903;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 1.1em; }
+
+.content p.accent {
   font-family: "Dancing Script", cursive;
   font-size: 1.7em;
-  color: #491048; }
+  color: #491048;
+  text-align: left; }
+
+.content a {
+  text-decoration: underline;
+  color: #5e2010; }
 
 .content span {
   text-transform: uppercase;
   font-family: "Poiret One", cursive;
   font-size: 1.5em;
+  line-height: 1.4em;
   color: #7f4689; }
 
 input[type="text"],
 input[type="email"] {
   border-radius: 5px;
-  border: 1px dashed #803018;
+  border: 1px dashed #5e2010;
   font-size: 1em;
   padding: 6px 10px;
   color: #491048; }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border: 1px solid #803018;
+  border: 1px solid #5e2010;
   outline: none; }
 
-.radio {
+.radio span {
   font-family: "Dancing Script", cursive;
   font-size: 1.6em;
   line-height: 1.5em;
-  color: #803018; }
+  color: #5e2010;
+  text-transform: none; }
+
+.radio span:hover {
+  cursor: pointer; }
+
+.radio span::before {
+  border: 1px solid #5e2010;
+  background-color: white;
+  border-radius: 5px; }
+
+.radio span::after {
+  border-radius: 2px;
+  background-color: #5e2010;
+  opacity: 0; }
+
+input[type="radio"]:checked + label span::after {
+  opacity: 1;
+  background-color: #491048; }
 
 input[type="submit"] {
-  border: 1px dashed #803018;
+  border: 1px dashed #5e2010;
   border-radius: 6px;
   background-color: transparent;
   color: #491048;
@@ -201,5 +272,17 @@ input[type="submit"] {
   font-size: 2em;
   text-transform: uppercase;
   padding: 10px 30px; }
+
+input[type="submit"]:focus {
+  border: 1px solid #5e2010;
+  outline: none; }
+
+input[type="radio"] {
+  display: none; }
+
+@media (min-width: 1024) {
+  input[type="radio"]:hover + label span::after {
+    opacity: 0.6;
+    background-color: #5e2010; } }
 
 /*# sourceMappingURL=master.css.map */

@@ -3,7 +3,7 @@
 <head>
 	<title>Jeff and Evin are Getting Married!</title>
 	<link rel="stylesheet" type="text/css" href="assets/styles/master.css">
-	<link href="https://fonts.googleapis.com/css?family=Crushed|Poiret+One|Dancing+Script|Great+Vibes|Fredericka+the+Great|Dawning+of+a+New+Day|Homemade+Apple|Jim+Nightshade|Just+Another+Hand|Princess+Sofia|Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Crushed|Poiret+One|Dancing+Script|Fredericka+the+Great|Homemade+Apple|Lobster" rel="stylesheet">
 </head>
 <body>
 
@@ -65,6 +65,54 @@
 		</div>
 
 		<div class="details l-details">
+
+			<h1>Details</h1>
+
+			<p class="accent">Everything you need to know about the big day.</p>
+
+			<h2>When &amp; Where</h2>
+
+			<p>Our big day is on October 20, 2018. Both the ceremony and reception will take place at Castle Unicorn in Glenwood, IA, about a half hour east of Omaha.</p>
+
+			<h2>Ceremony</h2>
+
+			<p>Guests may arrive at 4:45 PM, and the ceremony will begin at 5:15 PM. Feel free to take plenty of pictures, but please make sure your flash is off.</p>
+
+			<h2>Reception</h2>
+
+			<p>After the ceremony, we hope you will all enjoy a cocktail hour, then make your way over to the reception area for dinner.</p>
+
+			<h2>Food</h2>
+
+			<p>Dinner will be served buffet style with -option- -option-. Please let us know if you have any special dietary requirements such as gluten sensitivity or vegetarian options, we will make sure you are taken care of!</p>
+
+			<h2>Drinks</h2>
+
+			<p>After the ceremony, we will have a 3-hour block of open bar. During this time, beer and wine is on us! After that time, the full bar will remain open as a cash bar. Iced tea and lemonade will be available all night as well.</p>
+
+			<h2>Attire</h2>
+
+			<p>This is not a black tie event, semi-formal attire will be perfect. If you would like to dress with our color scheme, we will be using autumn reds, oranges, and plum, but please wear whatever you are comfortable with!</p>
+
+			<div class="icon l-icon">
+				<img src="assets/images/icon_attire.png">
+			</div>
+
+			<h2>Travel</h2>
+
+			<p>We are so grateful that many of our guests are making the trek from out of town. <a href="#">Click here for directions to the hotel</a>, and <a href="#">here for directions to the venue</a>.</p> 
+
+			<h2>Weather</h2>
+
+			<p>Weather around this time of year can be a little unpredictable, we expect temperatures between 55 and 70 degrees. Rain or snow will not be likely, but be sure to bring a light jacket.</p>
+
+			<h2>Hotel Info</h2>
+
+			<p>-Coming Soon-</p>
+
+			<h2>Shuttle</h2>
+
+			<p>-Coming Soon-</p>
 		</div>
 
 		<div class="party l-party">
@@ -74,7 +122,7 @@
 
 			<h1>RSVP</h1>
 
-			<p>Let us know if you'll be joining us!</p>
+			<p class="accent">Let us know if you'll be joining us!</p>
 
 			<form>
 
@@ -84,7 +132,12 @@
 				</div>
 
 				<div class="l-question">
-					<span>Name of Guest(s):</span>
+					<span>Email:</span>
+					<input type="email" name="email" required>
+				</div>
+
+				<div class="l-question">
+					<span>Guest(s):</span>
 					<input type="text" name="guestName">
 				</div>
 
@@ -92,16 +145,30 @@
 					<span>Will you be attending?</span>
 
 					<div class="radio l-radio">
-						<div><input type="radio" name="attending" value="yes" required> Yes</div>
-						<div><input type="radio" name="attending" value="no"> No</div>
-						<div><input type="radio" name="attending" value="unsure"> Unsure</div>
+
+						<div>
+							<input type="radio" name="attending" value="yes" id="rsvp-yes" required>
+							<label for="rsvp-yes">
+								<span class="radio__label"> Yes</span>
+							</label>
+						</div>
+
+						<div>
+							<input type="radio" name="attending" value="no" id="rsvp-no">
+							<label for="rsvp-no">
+								<span class="radio__label"> No</span>
+							</label>
+						</div>
+
+						<div>
+							<input type="radio" name="attending" value="unsure" id="rsvp-unsure">
+							<label for="rsvp-unsure">
+								<span class="radio__label"> Unsure</span>
+							</label>
+						</div>
+
 					</div>
 
-				</div>
-
-				<div class="l-question">
-					<span>Your email address:</span>
-					<input type="email" name="email" required>
 				</div>
 
 				<input type="submit" value="Submit">
