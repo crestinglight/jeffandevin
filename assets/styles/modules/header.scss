@@ -1,0 +1,40 @@
+.header {
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url("../images/1920x1500.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__text {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+	font-family: $cursive;
+	font-size: 5vw;
+	color: $paleYellow;
+	text-shadow: 0px 0px 3px #8a2b2a;
+}
+
+.logo h1 span {
+	font-family: $cursiveAccent;
+	font-size: 10vw;
+	line-height: 1.4em;
+}
+
+svg {
+	fill: $paleYellow;
+}
+
+.leafBorder::before {
+	content: "";
+	display: block;
+	background-color: transparent;
+	background-image: url("../images/leaf-border.png");
+	background-repeat: repeat-x;
+	height: 80px;
+	margin-top: -80px;
+	padding-bottom: 80px;
+}
+

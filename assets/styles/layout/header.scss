@@ -1,0 +1,27 @@
+.l-header {
+	overflow: hidden;
+}
+
+.l-header__text {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	min-height: 50vh;
+}
+
+.l-navigation {
+	display: none;
+}
+
+.l-logo {
+	display: block;
+	max-width: 75%;
+	line-height: 1.5em;
+	padding-left: 20px;
+	transform: rotate(-9deg);
+}
+
+svg {
+	display: block;
+}
+

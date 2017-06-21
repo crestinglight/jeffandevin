@@ -1,0 +1,26 @@
+.content {
+	background-color: $paleYellow;
+	background-image: url("../images/parchment.png");
+	background-repeat: repeat;
+	height: 100vh;
+}
+
+.content h1 {
+	font-family: $h1;
+	font-size: 2em;
+	text-align: center;
+	color: $darkRed;
+}
+
+.content p {
+	font-family: $paragraph;
+	font-size: 1.7em;
+	color: $darkPurple;
+}
+
+.content span {
+	text-transform: uppercase;
+	font-family: $thinScript;
+	font-size: 1.5em;
+	color: $midPurple;
+}

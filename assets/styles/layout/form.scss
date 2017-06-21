@@ -1,0 +1,22 @@
+input[type="text"],
+input[type="email"] {
+	display: inline-block;
+	width: 55%;
+}
+
+form span {
+	display: inline-block;
+	width: 40%;
+	margin-right: 20px;
+}
+
+.l-question {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.l-radio {
+	display: flex;
+	flex-direction: column;
+}

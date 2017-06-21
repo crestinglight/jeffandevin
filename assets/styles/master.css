@@ -1,0 +1,188 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type=button] {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.l-header {
+  overflow: hidden; }
+
+.l-header__text {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 50vh; }
+
+.l-navigation {
+  display: none; }
+
+.l-logo {
+  display: block;
+  max-width: 75%;
+  line-height: 1.5em;
+  padding-left: 20px;
+  transform: rotate(-9deg); }
+
+svg {
+  display: block; }
+
+.l-content {
+  padding: 60px 50px; }
+
+.l-content h1 {
+  margin-bottom: 40px; }
+
+.l-content p {
+  margin-bottom: 30px; }
+
+input[type="text"],
+input[type="email"] {
+  display: inline-block;
+  width: 55%; }
+
+form span {
+  display: inline-block;
+  width: 40%;
+  margin-right: 20px; }
+
+.l-question {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.l-radio {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../images/1920x1500.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.header__text {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.logo {
+  font-family: "Homemade Apple", cursive;
+  font-size: 5vw;
+  color: #f7e6b9;
+  text-shadow: 0px 0px 3px #8a2b2a; }
+
+.logo h1 span {
+  font-family: "Lobster", cursive;
+  font-size: 10vw;
+  line-height: 1.4em; }
+
+svg {
+  fill: #f7e6b9; }
+
+.leafBorder::before {
+  content: "";
+  display: block;
+  background-color: transparent;
+  background-image: url("../images/leaf-border.png");
+  background-repeat: repeat-x;
+  height: 80px;
+  margin-top: -80px;
+  padding-bottom: 80px; }
+
+.content {
+  background-color: #f7e6b9;
+  background-image: url("../images/parchment.png");
+  background-repeat: repeat;
+  height: 100vh; }
+
+.content h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 2em;
+  text-align: center;
+  color: #803018; }
+
+.content p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.7em;
+  color: #491048; }
+
+.content span {
+  text-transform: uppercase;
+  font-family: "Poiret One", cursive;
+  font-size: 1.5em;
+  color: #7f4689; }
+
+input[type="text"],
+input[type="email"] {
+  border-radius: 5px;
+  border: 1px dashed #803018;
+  font-size: 1em;
+  padding: 6px 10px;
+  color: #491048; }
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border: 1px solid #803018;
+  outline: none; }
+
+.radio {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  color: #803018; }
+
+/*# sourceMappingURL=master.css.map */

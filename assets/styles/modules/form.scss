@@ -1,0 +1,21 @@
+input[type="text"],
+input[type="email"] {
+	border-radius: 5px;
+	border: 1px dashed $darkRed;
+	font-size: 1em;
+	padding: 6px 10px;
+	color: $darkPurple;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+	border: 1px solid $darkRed;
+	outline: none;
+}
+
+.radio {
+	font-family: $paragraph;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	color: $darkRed;
+}
