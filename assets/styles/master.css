@@ -95,10 +95,14 @@ input[type="email"] {
   display: inline-block;
   width: 55%; }
 
+form {
+  text-align: center; }
+
 form span {
   display: inline-block;
   width: 40%;
-  margin-right: 20px; }
+  margin-right: 20px;
+  text-align: left; }
 
 .l-question {
   display: flex;
@@ -107,7 +111,11 @@ form span {
 
 .l-radio {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: left; }
+
+form input[type="submit"] {
+  margin-top: 30px; }
 
 .header {
   background-color: rgba(0, 0, 0, 0.5);
@@ -146,8 +154,7 @@ svg {
 .content {
   background-color: #f7e6b9;
   background-image: url("../images/parchment.png");
-  background-repeat: repeat;
-  height: 100vh; }
+  background-repeat: repeat; }
 
 .content h1 {
   font-family: "Fredericka the Great", cursive;
@@ -184,5 +191,15 @@ input[type="email"]:focus {
   font-size: 1.6em;
   line-height: 1.5em;
   color: #803018; }
+
+input[type="submit"] {
+  border: 1px dashed #803018;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #491048;
+  font-family: "Crushed", cursive;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 10px 30px; }
 
 /*# sourceMappingURL=master.css.map */

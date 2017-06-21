@@ -19,3 +19,14 @@ input[type="email"]:focus {
 	line-height: 1.5em;
 	color: $darkRed;
 }
+
+input[type="submit"] {
+	border: 1px dashed $darkRed;
+	border-radius: 6px;
+	background-color: transparent;
+	color: $darkPurple;
+	font-family: $submit;
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 10px 30px;
+}

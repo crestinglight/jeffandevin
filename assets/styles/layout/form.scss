@@ -4,10 +4,15 @@ input[type="email"] {
 	width: 55%;
 }
 
+form {
+	text-align: center;
+}
+
 form span {
 	display: inline-block;
 	width: 40%;
 	margin-right: 20px;
+	text-align: left;
 }
 
 .l-question {
@@ -19,4 +24,9 @@ form span {
 .l-radio {
 	display: flex;
 	flex-direction: column;
+	text-align: left;
+}
+
+form input[type="submit"] {
+	margin-top: 30px;
 }
