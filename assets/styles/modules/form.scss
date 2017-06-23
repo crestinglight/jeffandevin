@@ -1,5 +1,6 @@
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
 	border-radius: 5px;
 	border: 1px dashed $darkRed;
 	font-size: 1em;
@@ -8,7 +9,8 @@ input[type="email"] {
 }
 
 input[type="text"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+textarea:focus {
 	border: 1px solid $darkRed;
 	outline: none;
 }

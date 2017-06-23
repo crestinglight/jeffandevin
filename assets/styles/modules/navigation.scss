@@ -1,0 +1,15 @@
+.navigation ul {
+	background-color: $darkPurple;
+	text-align: right;
+	color: $paleYellow;
+	font-family: $block;
+	font-size: 1.5em;
+}
+
+.navigation ul li {
+	border-bottom: 1px dashed $paleYellow;
+}
+
+.border--top {
+	border-top: 1px dashed $paleYellow;
+}

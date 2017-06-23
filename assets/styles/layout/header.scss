@@ -6,19 +6,26 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
-	min-height: 50vh;
+	min-height: 475px;
+
+	position: relative;
 }
 
-.l-navigation {
-	display: none;
+.l-burger {
+	position: relative;
+	z-index: 7;
+	max-height: 40px;
 }
 
 .l-logo {
 	display: block;
 	max-width: 75%;
 	line-height: 1.5em;
-	padding-left: 20px;
 	transform: rotate(-9deg);
+	position: relative;
+	z-index: 3;
+	max-height: 80px;
+	overflow: visible;
 }
 
 svg {

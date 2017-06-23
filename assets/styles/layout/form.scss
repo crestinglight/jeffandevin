@@ -1,7 +1,13 @@
 input[type="text"],
 input[type="email"] {
 	display: inline-block;
-	width: 55%;
+	width: 65%;
+}
+
+textarea {
+	display: inline-block;
+	width: 100%;
+	resize: vertical;
 }
 
 form {
@@ -25,7 +31,7 @@ form span {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	padding-left: 25px;
+	padding-left: 10px;
 }
 
 .l-radio label {
@@ -56,4 +62,12 @@ form span {
 
 form input[type="submit"] {
 	margin-top: 30px;
+}
+
+.l-message {
+	text-align: left;
+}
+
+.l-message span {
+	margin-bottom: 15px;
 }

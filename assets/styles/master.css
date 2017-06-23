@@ -66,20 +66,42 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  min-height: 50vh; }
+  min-height: 475px;
+  position: relative; }
 
-.l-navigation {
-  display: none; }
+.l-burger {
+  position: relative;
+  z-index: 7;
+  max-height: 40px; }
 
 .l-logo {
   display: block;
   max-width: 75%;
   line-height: 1.5em;
-  padding-left: 20px;
-  transform: rotate(-9deg); }
+  transform: rotate(-9deg);
+  position: relative;
+  z-index: 3;
+  max-height: 80px;
+  overflow: visible; }
 
 svg {
   display: block; }
+
+.l-navigation {
+  position: absolute;
+  right: -220px;
+  top: 0;
+  min-height: 300px;
+  transition: all 0.2s linear; }
+
+.l-navigation ul {
+  min-height: 700px;
+  min-width: 38vw;
+  padding-top: 75px; }
+
+.l-navigation ul li a {
+  display: block;
+  padding: 20px 22px; }
 
 .l-content {
   padding: 30px 50px; }
@@ -92,12 +114,20 @@ svg {
   margin-bottom: 20px; }
 
 .l-content p {
+  margin-bottom: 20px; }
+
+.l-content .accent {
   margin-bottom: 30px; }
 
 input[type="text"],
 input[type="email"] {
   display: inline-block;
-  width: 55%; }
+  width: 65%; }
+
+textarea {
+  display: inline-block;
+  width: 100%;
+  resize: vertical; }
 
 form {
   text-align: center; }
@@ -117,7 +147,7 @@ form span {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-left: 25px; }
+  padding-left: 10px; }
 
 .l-radio label {
   position: relative;
@@ -144,10 +174,36 @@ form span {
 form input[type="submit"] {
   margin-top: 30px; }
 
+.l-message {
+  text-align: left; }
+
+.l-message span {
+  margin-bottom: 15px; }
+
 .l-icon {
   max-width: 30px;
   display: block;
-  margin: 0px auto 30px; }
+  margin: 0px auto 50px; }
+
+.l-registry {
+  text-align: center; }
+
+.l-honeyfund__button {
+  display: inline-block;
+  margin-bottom: 70px; }
+
+.l-registry__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 30px; }
+
+.l-registry__links a {
+  display: flex;
+  max-width: 25%;
+  padding: 15px 8px;
+  align-items: center; }
 
 .header {
   background-color: rgba(0, 0, 0, 0.5);
@@ -181,7 +237,22 @@ svg {
   background-repeat: repeat-x;
   height: 80px;
   margin-top: -80px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 5; }
+
+.navigation ul {
+  background-color: #491048;
+  text-align: right;
+  color: #f7e6b9;
+  font-family: "Josefin Sans", serif;
+  font-size: 1.5em; }
+
+.navigation ul li {
+  border-bottom: 1px dashed #f7e6b9; }
+
+.border--top {
+  border-top: 1px dashed #f7e6b9; }
 
 .content {
   background-color: #f7e6b9;
@@ -227,7 +298,8 @@ svg {
   color: #7f4689; }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   border-radius: 5px;
   border: 1px dashed #5e2010;
   font-size: 1em;
@@ -235,7 +307,8 @@ input[type="email"] {
   color: #491048; }
 
 input[type="text"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+textarea:focus {
   border: 1px solid #5e2010;
   outline: none; }
 
@@ -284,5 +357,23 @@ input[type="radio"] {
   input[type="radio"]:hover + label span::after {
     opacity: 0.6;
     background-color: #5e2010; } }
+.registry .honeyfund__button {
+  border: 1px dashed #5e2010;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #491048;
+  font-family: "Crushed", cursive;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  text-decoration: none; }
+
+.honeyfund__button:focus {
+  border: 1px solid #5e2010;
+  outline: none; }
+
+.registry__links a {
+  border-top: 1px solid #5e2010;
+  border-bottom: 1px solid #5e2010; }
 
 /*# sourceMappingURL=master.css.map */

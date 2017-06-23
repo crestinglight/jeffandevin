@@ -4,6 +4,7 @@
 	<title>Jeff and Evin are Getting Married!</title>
 	<link rel="stylesheet" type="text/css" href="assets/styles/master.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Crushed|Poiret+One|Dancing+Script|Fredericka+the+Great|Homemade+Apple|Lobster" rel="stylesheet">
+	<script type="text/javascript" src="assets/scripts/mobileNav.js"></script>
 </head>
 <body>
 
@@ -15,12 +16,22 @@
 				<h1><span>Jeff &amp; Evin</span> <br>are getting married!</h1>
 			</div>
 
-			<div class="navigation l-navigation">
+			<div class="burger l-burger js-burger">
+				
+				<a href="#">
+					<svg height="34" width="53">
+					  <path d="M 5 2 L 50 2 S 55 5 50 8 L 5 8 S 0 5 5 2 M 5 14 L 50 14 S 55 17 50 20 L 5 20 S 0 17 5 14 M 5 26 L 50 26 S 55 29 50 32 L 5 32 S 0 29 5 26 Z" stroke-width="0" />
+					</svg>
+				</a>
+
+			</div>
+
+			<div class="navigation l-navigation js-mobileNav">
 
 				<ul>
 
 					<li>
-						<a href="#">Our Story</a>
+						<a href="#" class="border--top">Our Story</a>
 					</li>
 
 					<li>
@@ -28,11 +39,11 @@
 					</li>
 
 					<li>
-						<a href="#">Wedding Party</a>
+						<a href="#">RSVP</a>
 					</li>
 
 					<li>
-						<a href="#">RSVP</a>
+						<a href="#">Registry</a>
 					</li>
 
 					<li>
@@ -40,16 +51,6 @@
 					</li>
 
 				</ul>
-
-			</div>
-
-			<div class="burger l-burger">
-				
-				<a href="#">
-					<svg height="34" width="53">
-					  <path d="M 5 2 L 50 2 S 55 5 50 8 L 5 8 S 0 5 5 2 M 5 14 L 50 14 S 55 17 50 20 L 5 20 S 0 17 5 14 M 5 26 L 50 26 S 55 29 50 32 L 5 32 S 0 29 5 26 Z" stroke-width="0" />
-					</svg>
-				</a>
 
 			</div>
 
@@ -74,21 +75,41 @@
 
 			<p>Our big day is on October 20, 2018. Both the ceremony and reception will take place at Castle Unicorn in Glenwood, IA, about a half hour east of Omaha.</p>
 
+			<div class="icon l-icon">
+				<img src="assets/images/icon_where.png">
+			</div>
+
 			<h2>Ceremony</h2>
 
 			<p>Guests may arrive at 4:45 PM, and the ceremony will begin at 5:15 PM. Feel free to take plenty of pictures, but please make sure your flash is off.</p>
+
+			<div class="icon l-icon">
+				<img src="assets/images/icon_ceremony.png">
+			</div>
 
 			<h2>Reception</h2>
 
 			<p>After the ceremony, we hope you will all enjoy a cocktail hour, then make your way over to the reception area for dinner.</p>
 
+			<div class="icon l-icon">
+				<img src="assets/images/icon_reception.png">
+			</div>
+
 			<h2>Food</h2>
 
 			<p>Dinner will be served buffet style with -option- -option-. Please let us know if you have any special dietary requirements such as gluten sensitivity or vegetarian options, we will make sure you are taken care of!</p>
 
+			<div class="icon l-icon">
+				<img src="assets/images/icon_food.png">
+			</div>
+
 			<h2>Drinks</h2>
 
 			<p>After the ceremony, we will have a 3-hour block of open bar. During this time, beer and wine is on us! After that time, the full bar will remain open as a cash bar. Iced tea and lemonade will be available all night as well.</p>
+
+			<div class="icon l-icon">
+				<img src="assets/images/icon_drinks.png">
+			</div>
 
 			<h2>Attire</h2>
 
@@ -100,11 +121,19 @@
 
 			<h2>Travel</h2>
 
-			<p>We are so grateful that many of our guests are making the trek from out of town. <a href="#">Click here for directions to the hotel</a>, and <a href="#">here for directions to the venue</a>.</p> 
+			<p>We are so grateful that many of our guests are making the trek from out of town. <a href="#">Click here for directions to the hotel</a>, and <a href="https://www.google.com/maps/dir//Castle+Unicorn,+Deacon+Road,+Pacific+Junction,+IA/@41.0591594,-95.8244684,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x87947e9ec05cf603:0x99a7e0fa7a784873!2m2!1d-95.789449!2d41.0591" target="_blank">here for directions to the venue</a>.</p> 
+
+			<div class="icon l-icon">
+				<img src="assets/images/icon_travel.png">
+			</div>
 
 			<h2>Weather</h2>
 
 			<p>Weather around this time of year can be a little unpredictable, we expect temperatures between 55 and 70 degrees. Rain or snow will not be likely, but be sure to bring a light jacket.</p>
+
+			<div class="icon l-icon">
+				<img src="assets/images/icon_weather.png">
+			</div>
 
 			<h2>Hotel Info</h2>
 
@@ -115,20 +144,17 @@
 			<p>-Coming Soon-</p>
 		</div>
 
-		<div class="party l-party">
-		</div>
-
 		<div class="rsvp l-rsvp">
 
 			<h1>RSVP</h1>
 
 			<p class="accent">Let us know if you'll be joining us!</p>
 
-			<form>
+			<form action="https://formspree.io/evin.grost@gmail.com" method="POST" id="rsvp">
 
 				<div class="l-question">
 					<span>Name: </span>
-					<input type="text" name="username" required>
+					<input type="text" name="name" required>
 				</div>
 
 				<div class="l-question">
@@ -176,7 +202,66 @@
 
 		</div>
 
+		<div class="registry l-registry">
+
+			<h1>Registry</h1>
+
+			<p class="accent">The gift that we want most for our wedding is to be surrounded by our friends and family, feeling loved, having fun, and being with the people that mean the most to us. That said, if you would like to give a little something extra, we deeply appreciate it.</p>
+
+			<h2>Honeyfund</h2>
+
+			<p>Saving for a wedding is tough! Saving for a wedding and a honeymoon is tougher. If you would like to pitch in toward our honeymoon, we've set up a honeyfund here:</p>
+
+			<a href="#" class="honeyfund__button l-honeyfund__button">Honeyfund Us</a>
+
+			<h2>Tangible Gifts</h2>
+
+			<p>If you prefer to give us a gift, you can find suggestions here:</p>
+
+			<div class="registry__links l-registry__links">
+
+				<a href="#">
+					<img src="assets/images/logo_amazon.png">
+				</a>
+
+				<a href="#">
+					<img src="assets/images/logo_bbb.png">
+				</a>
+
+				<a href="#">
+					<img src="assets/images/logo_macys.png">
+				</a>
+			</div>
+
+		</div>
+
 		<div class="contact l-contact">
+
+			<h1>Contact</h1>
+
+			<p class="accent">Have questions, special dietary requirements, or need special directions? Send us a message, we'll get back to you as soon as we can!</p>
+
+			<form action="https://formspree.io/evin.grost@gmail.com" method="POST" id="contactUs">
+
+				<div class="l-question">
+					<span>Name: </span>
+					<input type="text" name="name" required>
+				</div>
+
+				<div class="l-question">
+					<span>Email:</span>
+					<input type="email" name="email" required>
+				</div>
+
+				<div class="l-message">
+					<span>Message:</span>
+
+					<textarea form="contactUs" name="message" rows="6" required></textarea>
+
+				</div>
+
+				<input type="submit" value="Submit">
+			</form>
 		</div>
 
 	</div>
