@@ -2,13 +2,12 @@
 	position: absolute;
 	right: -220px;
 	top: 0;
-	min-height: 300px;
 
 	transition: all 0.2s linear;
 }
 
 .l-navigation ul {
-	min-height: 700px;
+	min-height: 550px;
 	min-width: 38vw;
 	padding-top: 75px;
 }
@@ -16,4 +15,42 @@
 .l-navigation ul li a {
 	display: block;
 	padding: 20px 22px;
+}
+
+
+@media (min-width: 550px){
+
+	.l-navigation {
+		right: -350px;
+	}
+}
+
+@media (min-width: 800px){
+
+	.l-navigation {
+		right: -400px;
+	}
+}
+
+@media (min-width: 1024px){
+
+	.l-burger {
+		display: none;
+	}
+
+	.l-navigation {
+		position: static;
+	}
+
+	.l-navigation ul {
+		min-height: auto;
+		min-width: auto;
+		padding-top: 0px;
+
+		display: flex;
+	}
+
+	.l-navigation ul li a {
+		display: inline-block;
+	}
 }

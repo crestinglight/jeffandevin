@@ -21,3 +21,27 @@
 	padding: 15px 8px;
 	align-items: center;
 }
+
+@media (max-width: 375px){
+
+	.l-registry__links {
+		display: block;
+	}
+
+	.l-registry__links a {
+		margin: 20px auto;
+		max-width: 80%;
+	}
+}
+
+@media (min-width: 800px){
+
+	.l-registry {
+		padding: 0px 30px;
+	}
+
+	.l-registry__links {
+		max-width: 650px;
+		margin: 0px auto;
+	}
+}

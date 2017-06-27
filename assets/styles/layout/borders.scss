@@ -1,0 +1,21 @@
+.l-leafBorder::before {
+	display: block;
+
+	height: 80px;
+	margin-top: -80px;
+	padding-bottom: 80px;
+
+	position: relative;
+	z-index: 5;
+}
+
+.l-leafBorder--dark::before {
+	display: block;
+
+	height: 50px;
+	margin-top: -80px;
+	padding-bottom: 50px;
+
+	position: relative;
+	z-index: 5;
+}

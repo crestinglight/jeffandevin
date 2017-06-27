@@ -1,12 +1,12 @@
 .registry .honeyfund__button {
-	border: 1px dashed $darkRed;
-	border-radius: 6px;
+	border-top: 1px solid $darkRed;
+	border-bottom: 1px solid $darkRed;
 	background-color: transparent;
 	color: $darkPurple;
 	font-family: $submit;
 	font-size: 2em;
 	text-transform: uppercase;
-	padding: 10px 30px;
+	padding: 20px 30px;
 	text-decoration: none;
 }
 

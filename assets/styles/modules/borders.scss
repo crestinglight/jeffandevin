@@ -1,0 +1,15 @@
+.leafBorder::before {
+	content: "";
+	
+	background-color: transparent;
+	background-image: url("../images/leaf-border.png");
+	background-repeat: repeat-x;
+}
+
+.leafBorder--dark::before {
+	content: "";
+	
+	background-color: transparent;
+	background-image: url("../images/leaf-border-bottom.png");
+	background-repeat: repeat-x;
+}

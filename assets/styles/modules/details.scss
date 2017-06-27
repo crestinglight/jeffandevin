@@ -1,0 +1,15 @@
+@media (min-width: 800px){
+
+	.details p.accent {
+		text-align: center;
+	}
+}
+
+@media (min-width: 1024px){
+
+	.details ul li {
+		background-color: $nearWhite;
+		border: 1px dashed $darkPurple;
+		border-radius: 5px;
+	}
+}

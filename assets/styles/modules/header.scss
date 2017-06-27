@@ -1,9 +1,10 @@
 .header {
 	background-color: rgba(0, 0, 0, 0.5);
 	background-image: url("../images/1920x1500.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: auto 56%;
 }
 
 .header__text {
@@ -27,17 +28,55 @@ svg {
 	fill: $paleYellow;
 }
 
-.leafBorder::before {
-	content: "";
-	display: block;
-	background-color: transparent;
-	background-image: url("../images/leaf-border.png");
-	background-repeat: repeat-x;
-	height: 80px;
-	margin-top: -80px;
-	padding-bottom: 80px;
 
-	position: relative;
-	z-index: 5;
+
+@media (min-width: 550px){
+
+	.logo {
+		font-size: 4vw;
+	}
+
+	.logo h1 span {
+		font-size: 8vw;
+	}
 }
 
+@media (min-width: 800px){
+
+	.logo {
+		font-size: 2.5vw;
+	}
+
+	.logo h1 span {
+		font-size: 6vw;
+	}
+}
+
+@media (min-width: 850px){
+
+	.header {
+	    background-size: 100%;
+	}
+}
+
+@media (min-width: 1024px){
+
+	.logo {
+		font-size: 2vw;
+	}
+
+	.logo h1 span {
+		font-size: 5vw;
+	}
+}
+
+@media (min-width: 1200px){
+
+	.logo {
+		font-size: 24px;
+	}
+
+	.logo h1 span {
+		font-size: 60px;
+	}
+}

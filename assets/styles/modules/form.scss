@@ -64,10 +64,23 @@ input[type="radio"] {
 	display: none;
 }
 
-@media (min-width: 1024){
+@media (min-width: 1024px){
 
 	input[type="radio"]:hover + label span::after {
 		opacity: 0.6;
 		background-color: $darkRed;
+	}
+
+	input[type="radio"]:checked + label span::after {
+		opacity: 1;
+		background-color: $darkPurple;
+	}
+
+	input[type="submit"] {
+		transition: all 0.5s ease;
+	}
+
+	input[type="submit"]:hover {
+		color: $red;
 	}
 }

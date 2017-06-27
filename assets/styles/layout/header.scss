@@ -32,3 +32,10 @@ svg {
 	display: block;
 }
 
+
+@media (min-width: 1200px){
+
+	.l-header__text {
+		min-height: 600px;
+	}
+}

@@ -3,6 +3,7 @@
 <head>
 	<title>Jeff and Evin are Getting Married!</title>
 	<link rel="stylesheet" type="text/css" href="assets/styles/master.css">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Crushed|Poiret+One|Dancing+Script|Fredericka+the+Great|Homemade+Apple|Lobster" rel="stylesheet">
 	<script type="text/javascript" src="assets/scripts/mobileNav.js"></script>
 </head>
@@ -35,19 +36,19 @@
 					</li>
 
 					<li>
-						<a href="#">Details</a>
+						<a href="#details">Details</a>
 					</li>
 
 					<li>
-						<a href="#">RSVP</a>
+						<a href="#rsvp">RSVP</a>
 					</li>
 
 					<li>
-						<a href="#">Registry</a>
+						<a href="#registry">Registry</a>
 					</li>
 
 					<li>
-						<a href="#">Contact</a>
+						<a href="#contact">Contact</a>
 					</li>
 
 				</ul>
@@ -58,99 +59,130 @@
 
 	</div>
 
-	<div class="leafBorder"></div>
+	<div class="leafBorder l-leafBorder"></div>
 
 	<div class="content l-content">
 
-		<div class="story l-story">
+		<div class="story l-story" id="story">
 		</div>
 
-		<div class="details l-details">
+		<div class="details l-details" id="details">
+				
+			<div class="details__header l-details__header">
+				<h1>Details</h1>
 
-			<h1>Details</h1>
-
-			<p class="accent">Everything you need to know about the big day.</p>
-
-			<h2>When &amp; Where</h2>
-
-			<p>Our big day is on October 20, 2018. Both the ceremony and reception will take place at Castle Unicorn in Glenwood, IA, about a half hour east of Omaha.</p>
-
-			<div class="icon l-icon">
-				<img src="assets/images/icon_where.png">
+				<p class="accent">Everything you need to know about the big day.</p>
 			</div>
+				
+			<ul>
 
-			<h2>Ceremony</h2>
+				<li>
+					<h2>When &amp; Where</h2>
 
-			<p>Guests may arrive at 4:45 PM, and the ceremony will begin at 5:15 PM. Feel free to take plenty of pictures, but please make sure your flash is off.</p>
+					<p>Our big day is on October 20, 2018. Both the ceremony and reception will take place at Castle Unicorn in Glenwood, IA, about a half hour east of Omaha.</p>
 
-			<div class="icon l-icon">
-				<img src="assets/images/icon_ceremony.png">
-			</div>
+					<div class="icon l-icon">
+						<img src="assets/images/icon_where.png">
+					</div>
+				</li>
 
-			<h2>Reception</h2>
+				<li>
+					<h2>Ceremony</h2>
 
-			<p>After the ceremony, we hope you will all enjoy a cocktail hour, then make your way over to the reception area for dinner.</p>
+					<p>Guests may arrive at 4:45 PM, and the ceremony will begin at 5:15 PM. Feel free to take plenty of pictures, but please make sure your flash is off.</p>
 
-			<div class="icon l-icon">
-				<img src="assets/images/icon_reception.png">
-			</div>
+					<div class="icon l-icon">
+						<img src="assets/images/icon_ceremony.png">
+					</div>
+				</li>
 
-			<h2>Food</h2>
+				<li>
+					<h2>Reception</h2>
 
-			<p>Dinner will be served buffet style with -option- -option-. Please let us know if you have any special dietary requirements such as gluten sensitivity or vegetarian options, we will make sure you are taken care of!</p>
+					<p>After the ceremony, we hope you will all enjoy a cocktail hour, then make your way over to the reception area for dinner.</p>
 
-			<div class="icon l-icon">
-				<img src="assets/images/icon_food.png">
-			</div>
+					<div class="icon l-icon">
+						<img src="assets/images/icon_reception.png">
+					</div>
+				</li>
 
-			<h2>Drinks</h2>
+				<li>
+					<h2>Food</h2>
 
-			<p>After the ceremony, we will have a 3-hour block of open bar. During this time, beer and wine is on us! After that time, the full bar will remain open as a cash bar. Iced tea and lemonade will be available all night as well.</p>
+					<p>Dinner will be served buffet style with -option- -option-. Please let us know if you have any special dietary requirements such as gluten sensitivity or vegetarian options, we will make sure you are taken care of!</p>
 
-			<div class="icon l-icon">
-				<img src="assets/images/icon_drinks.png">
-			</div>
+					<div class="icon l-icon">
+						<img src="assets/images/icon_food.png">
+					</div>
+				</li>
 
-			<h2>Attire</h2>
+				<li>
+					<h2>Drinks</h2>
 
-			<p>This is not a black tie event, semi-formal attire will be perfect. If you would like to dress with our color scheme, we will be using autumn reds, oranges, and plum, but please wear whatever you are comfortable with!</p>
+					<p>After the ceremony, we will have a 3-hour block of open bar. During this time, beer and wine is on us! After that time, the full bar will remain open as a cash bar. Iced tea and lemonade will be available all night as well.</p>
 
-			<div class="icon l-icon">
-				<img src="assets/images/icon_attire.png">
-			</div>
+					<div class="icon l-icon">
+						<img src="assets/images/icon_drinks.png">
+					</div>
+				</li>
 
-			<h2>Travel</h2>
+				<li>
+					<h2>Attire</h2>
 
-			<p>We are so grateful that many of our guests are making the trek from out of town. <a href="#">Click here for directions to the hotel</a>, and <a href="https://www.google.com/maps/dir//Castle+Unicorn,+Deacon+Road,+Pacific+Junction,+IA/@41.0591594,-95.8244684,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x87947e9ec05cf603:0x99a7e0fa7a784873!2m2!1d-95.789449!2d41.0591" target="_blank">here for directions to the venue</a>.</p> 
+					<p>This is not a black tie event, semi-formal attire will be perfect. If you would like to dress with our color scheme, we will be using autumn reds, oranges, and plum, but please wear whatever you are comfortable with!</p>
 
-			<div class="icon l-icon">
-				<img src="assets/images/icon_travel.png">
-			</div>
+					<div class="icon l-icon">
+						<img src="assets/images/icon_attire.png">
+					</div>
+				</li>
 
-			<h2>Weather</h2>
+				<li>
+					<h2>Travel</h2>
 
-			<p>Weather around this time of year can be a little unpredictable, we expect temperatures between 55 and 70 degrees. Rain or snow will not be likely, but be sure to bring a light jacket.</p>
+					<p>We are so grateful that many of our guests are making the trek from out of town. <a href="#">Click here for directions to the hotel</a>, and <a href="https://www.google.com/maps/dir//Castle+Unicorn,+Deacon+Road,+Pacific+Junction,+IA/@41.0591594,-95.8244684,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x87947e9ec05cf603:0x99a7e0fa7a784873!2m2!1d-95.789449!2d41.0591" target="_blank">here for directions to the venue</a>.</p> 
 
-			<div class="icon l-icon">
-				<img src="assets/images/icon_weather.png">
-			</div>
+					<div class="icon l-icon">
+						<img src="assets/images/icon_travel.png">
+					</div>
+				</li>
 
-			<h2>Hotel Info</h2>
+				<li>
+					<h2>Weather</h2>
 
-			<p>-Coming Soon-</p>
+					<p>Weather around this time of year can be a little unpredictable, we expect temperatures between 55 and 70 degrees. Rain or snow will not be likely, but be sure to bring a light jacket.</p>
 
-			<h2>Shuttle</h2>
+					<div class="icon l-icon">
+						<img src="assets/images/icon_weather.png">
+					</div>
+				</li>
 
-			<p>-Coming Soon-</p>
+				<li>
+					<h2>Hotel Info</h2>
+
+					<p>-Coming Soon-</p>
+				</li>
+
+				<li>
+					<h2>Shuttle</h2>
+
+					<p>-Coming Soon-</p>
+				</li>
+
+			</ul>
+
 		</div>
 
-		<div class="rsvp l-rsvp">
+		<div class="rsvp l-rsvp" id="rsvp">
 
 			<h1>RSVP</h1>
 
 			<p class="accent">Let us know if you'll be joining us!</p>
 
-			<form action="https://formspree.io/evin.grost@gmail.com" method="POST" id="rsvp">
+			<form action="https://formspree.io/evin.grost@gmail.com" method="POST" id="rsvp-form">
+
+				<input type="hidden" name="_next" value="thanks-rsvp.html" />
+
+				<input type="hidden" name="_subject" value="New Wedding RSVP!" />
 
 				<div class="l-question">
 					<span>Name: </span>
@@ -173,21 +205,21 @@
 					<div class="radio l-radio">
 
 						<div>
-							<input type="radio" name="attending" value="yes" id="rsvp-yes" required>
+							<input type="radio" name="attending" value="Yes, attending." id="rsvp-yes" required>
 							<label for="rsvp-yes">
 								<span class="radio__label"> Yes</span>
 							</label>
 						</div>
 
 						<div>
-							<input type="radio" name="attending" value="no" id="rsvp-no">
+							<input type="radio" name="attending" value="No, not attending." id="rsvp-no">
 							<label for="rsvp-no">
 								<span class="radio__label"> No</span>
 							</label>
 						</div>
 
 						<div>
-							<input type="radio" name="attending" value="unsure" id="rsvp-unsure">
+							<input type="radio" name="attending" value="Not sure if I'm attending." id="rsvp-unsure">
 							<label for="rsvp-unsure">
 								<span class="radio__label"> Unsure</span>
 							</label>
@@ -202,7 +234,7 @@
 
 		</div>
 
-		<div class="registry l-registry">
+		<div class="registry l-registry" id="registry">
 
 			<h1>Registry</h1>
 
@@ -235,13 +267,17 @@
 
 		</div>
 
-		<div class="contact l-contact">
+		<div class="contact l-contact" id="contact">
 
 			<h1>Contact</h1>
 
 			<p class="accent">Have questions, special dietary requirements, or need special directions? Send us a message, we'll get back to you as soon as we can!</p>
 
 			<form action="https://formspree.io/evin.grost@gmail.com" method="POST" id="contactUs">
+
+				<input type="hidden" name="_next" value="thanks-contact.html" />
+
+				<input type="hidden" name="_subject" value="New Wedding Message!" />
 
 				<div class="l-question">
 					<span>Name: </span>
@@ -250,7 +286,7 @@
 
 				<div class="l-question">
 					<span>Email:</span>
-					<input type="email" name="email" required>
+					<input type="email" name="_replyto" required>
 				</div>
 
 				<div class="l-message">
@@ -265,5 +301,18 @@
 		</div>
 
 	</div>
+
+	<div class="leafBorder--dark l-leafBorder--dark"></div>
+
+	<div class="footer l-footer">
+
+		<span>&copy;Jeff Brooks and Evin Grost 2017 | 
+		<a href="#">Back to Top<svg height="18" width="20">
+				<path d="M0 8 L4 8 L4 18 L10 18 L10 8 L14 8 L7 0 Z">
+				</path>
+			</svg>
+		</a></span>
+	</div>
+
 </body>
 </html>

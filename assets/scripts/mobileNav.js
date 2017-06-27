@@ -4,6 +4,8 @@ window.addEventListener("load", function(){
 	var mobileMenu = document.getElementsByClassName("js-mobileNav")[0];
 
 	burger.addEventListener("click", menuDisplay);
+
+	window.onresize = moveMenu;
 	
 	function menuDisplay(e){
 		
@@ -11,7 +13,7 @@ window.addEventListener("load", function(){
 
 		var rightPos = window.getComputedStyle(mobileMenu).getPropertyValue('right');
 		
-		if(rightPos <= "-220px"){
+		if(rightPos === "-220px" || rightPos === "-350px" || rightPos === "-400px"){
 
 			openMenu();
 		}
@@ -28,6 +30,42 @@ window.addEventListener("load", function(){
 
 	function closeMenu(){
 
-		mobileMenu.style.right = "-220px";
+		var winSize = window.innerWidth;
+		
+		if (winSize < 550){
+
+			mobileMenu.style.right = "-220px";
+		}
+
+		else if (winSize >= 550 && winSize < 800){
+
+			mobileMenu.style.right = "-350px";
+		}
+
+		else {
+
+			mobileMenu.style.right = "-400px";
+		}
+
+	}
+
+	function moveMenu(){
+
+		var windowSize = window.innerWidth;
+		
+		if (windowSize < 550){
+
+			mobileMenu.style.right = "-220px";
+		}
+
+		else if (windowSize >= 550 && windowSize < 800){
+
+			mobileMenu.style.right = "-350px";
+		}
+
+		else {
+
+			mobileMenu.style.right = "-400px";
+		}
 	}
 });

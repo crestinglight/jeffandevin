@@ -47,3 +47,17 @@
 	line-height: 1.4em;
 	color: $midPurple;
 }
+
+
+@media (min-width: 1024px){
+
+	body {
+		background-color: $paleYellow;
+		background-image: url("../images/parchment.png");
+		background-repeat: repeat;
+	}
+
+	.content {
+		background: none;
+	}
+}
