@@ -1,5 +1,5 @@
 .l-content {
-	padding: 30px 50px 125px;
+	padding: 30px 25px 125px;
 }
 
 .l-content h1 {
@@ -17,6 +17,13 @@
 
 .l-content .accent {
 	margin-bottom: 30px;
+}
+
+@media (min-width: 450px){
+
+	.l-content {
+		padding: 30px 50px 125px;
+	}
 }
 
 @media (min-width: 800px){

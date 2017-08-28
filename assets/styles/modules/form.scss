@@ -64,6 +64,13 @@ input[type="radio"] {
 	display: none;
 }
 
+@media (max-width: 400px){
+
+	.rsvp form span {
+		font-size: 6vw;
+	}
+}
+
 @media (min-width: 1024px){
 
 	input[type="radio"]:hover + label span::after {
