@@ -49,7 +49,22 @@
 }
 
 
-@media (min-width: 1024px){
+@media (min-width: 768px) {
+
+	.content h1 {
+		font-size: 6vw;
+	}
+
+	.content h2 {
+		font-size: 5vw;
+	}
+
+	.content p.accent {
+		font-size: 4.5vw;
+	}
+}
+
+@media (min-width: 1024px) {
 
 	body {
 		background-color: $paleYellow;
@@ -59,5 +74,21 @@
 
 	.content {
 		background: none;
+	}
+
+	.content h1 {
+		font-size: 48px;
+	}
+
+	.content h2 {
+		font-size: 28px;
+	}
+
+	.content p {
+		font-size: 20px;
+	}
+
+	.content p.accent {
+		font-size: 32px;
 	}
 }

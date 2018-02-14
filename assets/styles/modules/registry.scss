@@ -19,3 +19,12 @@
 	border-top: 4px solid $darkRed;
 	border-bottom: 4px solid $darkRed;
 }
+
+
+@media (min-width: 768px) {
+
+	.registry__links a {
+		border-top: 3px solid $darkRed;
+		border-bottom: 3px solid $darkRed;
+	}
+}

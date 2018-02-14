@@ -7,7 +7,6 @@
 	justify-content: space-between;
 	padding: 20px;
 	min-height: 775px;
-
 	position: relative;
 }
 
@@ -36,7 +35,29 @@
 }
 
 
-@media (min-width: 1200px){
+@media (min-width: 768px) {
+
+	.l-burger {
+		max-height: 80px;
+	}
+
+	.l-burger svg {
+		width: 100px;
+	}
+
+	.l-header__text {
+		min-height: 695px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.l-header__text {
+		min-height: 575px;
+	}
+}
+
+@media (min-width: 1200px) {
 
 	.l-header__text {
 		min-height: 600px;

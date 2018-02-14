@@ -1,6 +1,6 @@
 .l-navigation {
 	position: absolute;
-	right: -220px;
+	right: -400px;
 	top: 0;
 
 	transition: all 0.2s linear;
@@ -17,18 +17,12 @@
 	padding: 30px 25px;
 }
 
+@media (min-width: 768px){
 
-@media (min-width: 550px){
-
-	.l-navigation {
-		right: -350px;
-	}
-}
-
-@media (min-width: 800px){
-
-	.l-navigation {
-		right: -400px;
+	.l-navigation ul {
+		min-height: 775px;
+		min-width: 35vw;
+		padding-top: 110px;
 	}
 }
 
@@ -52,5 +46,7 @@
 
 	.l-navigation ul li a {
 		display: inline-block;
+		padding: 15px 20px;
+		white-space: nowrap;
 	}
 }

@@ -4,9 +4,22 @@
 	border-radius: 20px;
 }
 
-@media (min-width: 800px){
+@media (min-width: 768px){
+
+	.details ul li {
+		border: 4px dashed $darkPurple;
+		border-radius: 15px;
+	}
 
 	.details p.accent {
 		text-align: center;
+	}
+}
+
+@media (min-width: 1024px){
+
+	.details ul li {
+		border: 2px dashed $darkPurple;
+		border-radius: 10px;
 	}
 }

@@ -10,21 +10,22 @@
 	width: 75%;
 }
 
-// @media (min-width: 768px){
+@media (min-width: 1024px){
 
-// 	.l-contact {
-// 		max-width: 500px;
-// 		margin: 0px auto;
-// 	}
-// }
+	.l-contact {
+		max-width: 800px;
+		margin: 80px auto;
+	}
+
+	.l-contact form {
+		max-width: 70%;
+		margin: 0px auto;
+	}
+}
 
 @media (min-width: 1200px){
 
 	.l-contact {
-		max-width: 600px;
-	}
-
-	.l-contact textarea {
-		min-height: 200px;
+		max-width: 1000px;
 	}
 }

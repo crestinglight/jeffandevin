@@ -28,18 +28,43 @@
 	}
 }
 
-// @media (min-width: 800px){
+@media (min-width: 768px){
 
-// 	.l-registry {
-// 		padding: 0px 30px;
-// 	}
+	.l-registry {
+		padding: 0px 30px;
+	}
 
-// 	.l-registry__links {
-// 		max-width: 650px;
-// 		margin: 0px auto;
-// 		display: flex;
-// 		justify-content: space-between;
-// 		align-items: stretch;
-// 		width: 100%;
-// 	}
-// }
+	.l-registry__links {
+		margin: 0px auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		width: 100%;
+	}
+
+	.l-registry__links a {
+		display: flex;
+		max-width: calc(33.333% - 20px);
+		padding: 15px 8px;
+	}
+}
+
+@media (min-width: 1024px){
+
+	.l-registry {
+		max-width: 800px;
+		margin: 0px auto;
+	}
+
+	.l-registry__links {
+		max-width: 70%;
+		margin: 0px auto;
+	}
+}
+
+@media (min-width: 1200px){
+
+	.l-registry {
+		max-width: 1000px;
+	}
+}
