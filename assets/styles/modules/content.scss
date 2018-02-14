@@ -1,12 +1,12 @@
 .content {
 	background-color: $paleYellow;
-	background-image: url("../images/parchment.png");
+	background-image: url("assets/images/parchment.png");
 	background-repeat: repeat;
 }
 
 .content h1 {
 	font-family: $h1;
-	font-size: 2em;
+	font-size: 8vw;
 	text-align: center;
 	color: $darkRed;
 	text-transform: uppercase;
@@ -16,21 +16,21 @@
 	font-family: $submit;
 	color: $darkPurple;
 	text-transform: uppercase;
-	font-size: 1.8em;
+	font-size: 6vw;
 	text-align: center;
 }
 
 .content p {
 	font-family: $block;
 	color: $red;
-	font-size: 1.3em;
+	font-size: 3vw;
 	text-align: center;
 	line-height: 1.1em;
 }
 
 .content p.accent {
 	font-family: $paragraph;
-	font-size: 1.7em;
+	font-size: 6vw;
 	color: $darkPurple;
 	text-align: left;
 }
@@ -53,7 +53,7 @@
 
 	body {
 		background-color: $paleYellow;
-		background-image: url("../images/parchment.png");
+		background-image: url("assets/images/parchment.png");
 		background-repeat: repeat;
 	}
 

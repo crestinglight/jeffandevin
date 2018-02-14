@@ -1,23 +1,28 @@
 .l-icon {
-	max-width: 30px;
+	max-width: 100px;
 	display: block;
-	margin: 0px auto 50px;
+	margin: 0px auto;
 }
 
-@media (min-width: 550px){
-
-	.l-details ul {
-		display: flex;
-	    flex-wrap: wrap;
-		align-items: flex-start;
-	}
-
-	.l-details ul li {
-		display: inline-block;
-		width: calc(50% - 2px);
-		padding: 0px 30px;
-	}
+.l-details ul li {
+	margin: 80px 0px;
+	padding: 30px;
 }
+
+// @media (min-width: 768px){
+
+// 	.l-details ul {
+// 		display: flex;
+// 	    flex-wrap: wrap;
+// 		align-items: flex-start;
+// 	}
+
+// 	.l-details ul li {
+// 		display: inline-block;
+// 		width: calc(50% - 2px);
+// 		padding: 0px 30px;
+// 	}
+// }
 
 @media (min-width: 1024px){
 

@@ -2,6 +2,7 @@ input[type="text"],
 input[type="email"] {
 	display: inline-block;
 	width: 65%;
+	padding: 10px 20px;
 }
 
 textarea {
@@ -17,7 +18,7 @@ form {
 form span {
 	display: inline-block;
 	width: 40%;
-	margin-right: 20px;
+	margin-right: 40px;
 	text-align: left;
 }
 
@@ -31,12 +32,19 @@ form span {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
+	flex-grow: 1;
 	padding-left: 10px;
 }
 
+.l-radio > div {
+	flex-grow: 1;
+}
+
 .l-radio label {
+	display: block;
 	position: relative;
-	padding-left: 5px;
+	padding-left: 40px;
+	min-width: 100%;
 }
 
 .l-radio span::before,
@@ -50,14 +58,14 @@ form span {
 
 .l-radio span::before {
 	left: -25px;
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 }
 
 .l-radio span::after {
-	left: -20px;
-	width: 10px;
-	height: 10px;
+	left: -15px;
+	width: 20px;
+	height: 20px;
 }
 
 form input[type="submit"] {

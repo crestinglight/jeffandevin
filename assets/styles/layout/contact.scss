@@ -1,10 +1,22 @@
-@media (min-width: 550px){
-
-	.l-contact {
-		max-width: 500px;
-		margin: 0px auto;
-	}
+.l-contact form {
+	margin: 80px 0px;
 }
+
+.l-contact .l-question span {
+	width: 25%;
+}
+
+.l-contact .l-question input {
+	width: 75%;
+}
+
+// @media (min-width: 768px){
+
+// 	.l-contact {
+// 		max-width: 500px;
+// 		margin: 0px auto;
+// 	}
+// }
 
 @media (min-width: 1200px){
 
