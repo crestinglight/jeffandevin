@@ -456,6 +456,9 @@ svg {
   .logo h1 span {
     font-size: 88px; } }
 @media (min-width: 1024px) {
+  .header {
+    background-size: 100%; }
+
   .logo {
     font-size: 26px; }
 
@@ -751,6 +754,10 @@ input[type="radio"] {
   .registry__links a {
     border-top: 3px solid #5e2010;
     border-bottom: 3px solid #5e2010; } }
+@media (min-width: 1024px) {
+  .registry__links a {
+    border-top: 2px solid #5e2010;
+    border-bottom: 2px solid #5e2010; } }
 .footer {
   background-color: #1f0005;
   color: #f7e6b9;
