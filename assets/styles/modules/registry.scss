@@ -6,13 +6,7 @@
 	font-family: $submit;
 	font-size: 2em;
 	text-transform: uppercase;
-	padding: 20px 30px;
 	text-decoration: none;
-}
-
-.honeyfund__button:focus {
-	border: 4px solid $darkRed;
-	outline: none;
 }
 
 .registry__links a {
@@ -20,8 +14,17 @@
 	border-bottom: 4px solid $darkRed;
 }
 
+.registry a:focus {
+	outline: none;
+}
+
 
 @media (min-width: 768px) {
+
+	.registry .honeyfund__button {
+		border-top: 3px solid $darkRed;
+		border-bottom: 3px solid $darkRed;
+	}
 
 	.registry__links a {
 		border-top: 3px solid $darkRed;
@@ -30,6 +33,11 @@
 }
 
 @media (min-width: 1024px) {
+
+	.registry .honeyfund__button {
+		border-top: 2px solid $darkRed;
+		border-bottom: 2px solid $darkRed;
+	}
 
 	.registry__links a {
 		border-top: 2px solid $darkRed;
