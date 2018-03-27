@@ -99,6 +99,11 @@ input[type="radio"] {
 		font-size: 32px;
 		padding: 10px 30px;
 	}
+
+	input[type="submit"]:focus {
+		border: 2px solid $darkRed;
+		outline: none;
+	}
 }
 
 @media (max-width: 400px){
@@ -147,6 +152,11 @@ input[type="radio"] {
 		border-radius: 10px;
 		font-size: 32px;
 		padding: 10px 30px;
+	}
+
+	input[type="submit"]:focus {
+		border: 2px solid $darkRed;
+		outline: none;
 	}
 }
 
@@ -211,11 +221,19 @@ input[type="radio"] {
 	}
 
 	input[type="submit"] {
+		border: 2px dashed $darkRed;
+		border-radius: 10px;
+		font-size: 32px;
 		transition: all 0.5s ease;
 	}
 
 	input[type="submit"]:hover {
 		color: $red;
+	}
+
+	input[type="submit"]:focus {
+		border: 2px solid $darkRed;
+		outline: none;
 	}
 
 	.radio span::before {
@@ -224,11 +242,5 @@ input[type="radio"] {
 
 	.radio span::after {
 		border-radius: 2px;
-	}
-
-	input[type="submit"] {
-		border: 2px dashed $darkRed;
-		border-radius: 10px;
-		font-size: 32px;
 	}
 }
