@@ -4,6 +4,15 @@
 	border-radius: 20px;
 }
 
+
+@media (hover: hover){
+
+	.details ul li {
+		border: 2px dashed $darkPurple;
+		border-radius: 10px;
+	}
+}
+
 @media (min-width: 768px){
 
 	.details ul li {

@@ -35,6 +35,17 @@
 }
 
 
+@media (hover: hover){
+
+	.l-burger svg {
+		width: 75px;
+	}
+
+	.l-header__text {
+		min-height: 585px;
+	}
+}
+
 @media (min-width: 768px) {
 
 	.l-burger {

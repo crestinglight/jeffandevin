@@ -17,6 +17,15 @@
 	padding: 30px 25px;
 }
 
+
+@media (hover: hover){
+
+	.l-navigation ul {
+		padding-top: 80px;
+		min-width: 0px;
+	}
+}
+
 @media (min-width: 768px){
 
 	.l-navigation ul {

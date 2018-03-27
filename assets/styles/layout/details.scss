@@ -9,6 +9,19 @@
 	padding: 30px;
 }
 
+
+@media (hover: hover){
+
+	.l-details ul li {
+		margin: 0px 0px 20px;
+		padding: 20px;
+	}
+
+	.l-icon {
+		max-width: 35px;
+	}
+}
+
 @media (min-width: 768px){
 
 	.l-details ul {

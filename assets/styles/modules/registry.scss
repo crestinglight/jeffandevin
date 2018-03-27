@@ -19,6 +19,19 @@
 }
 
 
+@media (hover: hover){
+
+	.registry .honeyfund__button {
+		border-top: 2px solid $darkRed;
+		border-bottom: 2px solid $darkRed;
+	}
+
+	.registry__links a {
+		border-top: 2px solid $darkRed;
+		border-bottom: 2px solid $darkRed;
+	}
+}
+
 @media (min-width: 768px) {
 
 	.registry .honeyfund__button {

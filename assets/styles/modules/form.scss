@@ -67,6 +67,40 @@ input[type="radio"] {
 	display: none;
 }
 
+
+@media (hover: hover){
+
+	.radio span::before {
+		border:2px solid $darkRed;
+		border-radius: 4px;
+	}
+
+	.radio span::after {
+		border-radius: 2px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		border-radius: 10px;
+		border: 2px dashed $darkRed;
+		font-size: 24px;
+	}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 2px solid $darkRed;
+	}
+
+	input[type="submit"] {
+		border: 2px dashed $darkRed;
+		border-radius: 10px;
+		font-size: 32px;
+		padding: 10px 30px;
+	}
+}
+
 @media (max-width: 400px){
 
 	.rsvp form span {
@@ -74,7 +108,7 @@ input[type="radio"] {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
 
 	form {
 		font-size: 26px;

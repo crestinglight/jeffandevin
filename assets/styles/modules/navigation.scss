@@ -15,6 +15,21 @@
 }
 
 
+@media (hover: hover){
+
+	.navigation ul {
+		font-size: 24px;
+	}
+
+	.navigation ul li {
+		border-bottom: 2px dashed $paleYellow;
+	}
+
+	.border--top {
+		border-top: 2px dashed $paleYellow;
+	}
+}
+
 @media (min-width: 768px) {
 
 	.navigation ul {

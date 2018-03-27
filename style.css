@@ -90,6 +90,12 @@ img {
   width: 125px;
   height: auto; }
 
+@media (hover: hover) {
+  .l-burger svg {
+    width: 75px; }
+
+  .l-header__text {
+    min-height: 585px; } }
 @media (min-width: 768px) {
   .l-burger {
     max-height: 80px; }
@@ -136,6 +142,10 @@ img {
   display: block;
   padding: 30px 25px; }
 
+@media (hover: hover) {
+  .l-navigation ul {
+    padding-top: 80px;
+    min-width: 0px; } }
 @media (min-width: 768px) {
   .l-navigation ul {
     min-height: 775px;
@@ -174,6 +184,9 @@ img {
 .l-content .accent {
   margin-bottom: 30px; }
 
+@media (hover: hover) {
+  .l-content h1 {
+    margin: 40px 0px 30px; } }
 @media (min-width: 450px) {
   .l-content {
     padding: 30px 50px 125px; } }
@@ -254,6 +267,32 @@ form input[type="submit"] {
 .l-message span {
   margin-bottom: 15px; }
 
+@media (hover: hover) {
+  .l-question {
+    margin-bottom: 15px; }
+
+  form span {
+    margin-right: 20px; }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 5px 10px; }
+
+  .l-radio span::before {
+    left: -25px;
+    width: 20px;
+    height: 20px; }
+
+  .l-radio span::after {
+    left: -20px;
+    width: 10px;
+    height: 10px; }
+
+  .l-radio label {
+    padding-left: 20px; }
+
+  form input[type="submit"] {
+    margin-top: 15px; } }
 @media (min-width: 768px) {
   form span {
     width: 30%; }
@@ -305,6 +344,13 @@ form input[type="submit"] {
   margin: 80px 0px;
   padding: 30px; }
 
+@media (hover: hover) {
+  .l-details ul li {
+    margin: 0px 0px 20px;
+    padding: 20px; }
+
+  .l-icon {
+    max-width: 35px; } }
 @media (min-width: 768px) {
   .l-details ul {
     display: flex;
@@ -345,6 +391,9 @@ form input[type="submit"] {
 .l-rsvp {
   margin: 120px 0px; }
 
+@media (hover: hover) {
+  .l-rsvp {
+    margin: 60px 0px; } }
 @media (min-width: 1024px) {
   .l-rsvp {
     max-width: 800px;
@@ -358,6 +407,9 @@ form input[type="submit"] {
 .l-contact .l-question input {
   width: 75%; }
 
+@media (hover: hover) {
+  .l-contact form {
+    margin: 20px 0px; } }
 @media (min-width: 1024px) {
   .l-contact {
     max-width: 800px;
@@ -377,7 +429,10 @@ form input[type="submit"] {
   display: inline-block;
   margin: 60px auto 80px;
   max-width: 80%;
-  padding: 0px; }
+  padding: 0px 0px 10px; }
+
+.l-registry .l-honeyfund__button img {
+  display: block; }
 
 .l-registry__links a {
   display: inline-block;
@@ -386,6 +441,18 @@ form input[type="submit"] {
   align-items: center;
   margin: 30px 0px; }
 
+@media (hover: hover) {
+  .l-registry {
+    margin: 60px 0px; }
+
+  .l-registry .l-honeyfund__button {
+    margin: 10px 0px 40px;
+    max-width: 250px; }
+
+  .l-registry__links a {
+    max-width: 250px;
+    padding: 15px 8px;
+    margin: 10px 0px 0px; } }
 @media (max-width: 375px) {
   .l-registry__links {
     display: block; }
@@ -502,6 +569,15 @@ svg {
 .border--top {
   border-top: 4px dashed #f7e6b9; }
 
+@media (hover: hover) {
+  .navigation ul {
+    font-size: 24px; }
+
+  .navigation ul li {
+    border-bottom: 2px dashed #f7e6b9; }
+
+  .border--top {
+    border-top: 2px dashed #f7e6b9; } }
 @media (min-width: 768px) {
   .navigation ul {
     font-size: 38px; } }
@@ -566,6 +642,21 @@ svg {
   line-height: 1.4em;
   color: #7f4689; }
 
+@media (hover: hover) {
+  .content h1 {
+    font-size: 36px; }
+
+  .content h2 {
+    font-size: 32px; }
+
+  .content p {
+    font-size: 18px; }
+
+  .content p.accent {
+    font-size: 28px; }
+
+  .content span {
+    font-size: 24px; } }
 @media (min-width: 768px) {
   .content h1 {
     font-size: 6vw; }
@@ -656,6 +747,31 @@ input[type="submit"]:focus {
 input[type="radio"] {
   display: none; }
 
+@media (hover: hover) {
+  .radio span::before {
+    border: 2px solid #5e2010;
+    border-radius: 4px; }
+
+  .radio span::after {
+    border-radius: 2px; }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border-radius: 10px;
+    border: 2px dashed #5e2010;
+    font-size: 24px; }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border: 2px solid #5e2010; }
+
+  input[type="submit"] {
+    border: 2px dashed #5e2010;
+    border-radius: 10px;
+    font-size: 32px;
+    padding: 10px 30px; } }
 @media (max-width: 400px) {
   .rsvp form span {
     font-size: 6vw; } }
@@ -730,6 +846,10 @@ input[type="radio"] {
   border: 6px dashed #491048;
   border-radius: 20px; }
 
+@media (hover: hover) {
+  .details ul li {
+    border: 2px dashed #491048;
+    border-radius: 10px; } }
 @media (min-width: 768px) {
   .details ul li {
     border: 4px dashed #491048;
@@ -758,6 +878,14 @@ input[type="radio"] {
 .registry a:focus {
   outline: none; }
 
+@media (hover: hover) {
+  .registry .honeyfund__button {
+    border-top: 2px solid #5e2010;
+    border-bottom: 2px solid #5e2010; }
+
+  .registry__links a {
+    border-top: 2px solid #5e2010;
+    border-bottom: 2px solid #5e2010; } }
 @media (min-width: 768px) {
   .registry .honeyfund__button {
     border-top: 3px solid #5e2010;

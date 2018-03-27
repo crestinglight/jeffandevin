@@ -49,7 +49,30 @@
 }
 
 
-@media (min-width: 768px) {
+@media (hover: hover){
+
+	.content h1 {
+		font-size: 36px;
+	}
+
+	.content h2 {
+		font-size: 32px;
+	}
+
+	.content p {
+		font-size: 18px;
+	}
+
+	.content p.accent {
+		font-size: 28px;
+	}
+
+	.content span {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 768px){
 
 	.content h1 {
 		font-size: 6vw;
@@ -68,7 +91,7 @@
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
 
 	body {
 		background-color: $paleYellow;
