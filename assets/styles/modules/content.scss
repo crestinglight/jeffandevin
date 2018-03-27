@@ -91,6 +91,29 @@
 	}
 }
 
+@media (min-width: 768px) and (hover: hover){
+
+	.content h1 {
+		font-size: 36px;
+	}
+
+	.content h2 {
+		font-size: 32px;
+	}
+
+	.content p {
+		font-size: 20px;
+	}
+
+	.content p.accent {
+		font-size: 28px;
+	}
+
+	.content span {
+		font-size: 24px;
+	}
+}
+
 @media (min-width: 1024px){
 
 	body {

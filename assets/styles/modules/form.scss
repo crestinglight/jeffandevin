@@ -71,7 +71,7 @@ input[type="radio"] {
 @media (hover: hover){
 
 	.radio span::before {
-		border:2px solid $darkRed;
+		border: 2px solid $darkRed;
 		border-radius: 4px;
 	}
 
@@ -140,6 +140,43 @@ input[type="radio"] {
 		border: 4px dashed $darkRed;
 		border-radius: 15px;
 		font-size: 54px;
+	}
+
+	input[type="submit"] {
+		border: 2px dashed $darkRed;
+		border-radius: 10px;
+		font-size: 32px;
+		padding: 10px 30px;
+	}
+}
+
+@media (min-width: 768px) and (hover: hover){
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		border-radius: 10px;
+		border: 2px dashed $darkRed;
+		font-size: 24px;
+	}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 2px solid $darkRed;
+	}
+
+	.radio span {
+		font-size: 28px;
+	}
+
+	.radio span::before {
+		border: 2px solid $darkRed;
+		border-radius: 4px;
+	}
+
+	.radio span::after {
+		border-radius: 2px;
 	}
 }
 

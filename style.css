@@ -105,6 +105,12 @@ img {
 
   .l-header__text {
     min-height: 695px; } }
+@media (min-width: 768px) and (hover: hover) {
+  .l-burger svg {
+    width: 50px; }
+
+  .l-header__text {
+    min-height: 585px; } }
 @media (min-width: 1024px) {
   .l-header__text {
     min-height: 575px; } }
@@ -151,6 +157,9 @@ img {
     min-height: 775px;
     min-width: 35vw;
     padding-top: 110px; } }
+@media (min-width: 768px) and (hover: hover) {
+  .l-navigation ul {
+    padding-top: 65px; } }
 @media (min-width: 1024px) {
   .l-burger {
     display: none; }
@@ -313,11 +322,32 @@ form input[type="submit"] {
   .l-radio span::after {
     left: -12px;
     width: 14px;
-    height: 14px; } }
+    height: 14px; }
+
+  .l-radio label {
+    padding-left: 25px; } }
+@media (min-width: 768px) and (hover: hover) {
+  input[type="text"],
+  input[type="email"] {
+    width: 75%;
+    padding: 5px 10px; }
+
+  form span {
+    width: 25%; }
+
+  .l-radio span::before {
+    left: -12px;
+    width: 20px;
+    height: 20px; }
+
+  .l-radio span::after {
+    left: -7px;
+    width: 10px;
+    height: 10px; } }
 @media (min-width: 1024px) {
   input[type="text"],
   input[type="email"] {
-    width: 60%;
+    width: 75%;
     padding: 6px 10px; }
 
   textarea {
@@ -367,6 +397,9 @@ form input[type="submit"] {
 
   .l-icon {
     max-width: 50px; } }
+@media (min-width: 768px) and (hover: hover) {
+  .l-icon {
+    max-width: 30px; } }
 @media (min-width: 1024px) {
   .l-details ul {
     align-items: stretch; }
@@ -394,6 +427,9 @@ form input[type="submit"] {
 @media (hover: hover) {
   .l-rsvp {
     margin: 60px 0px; } }
+@media (min-width: 768px) and (hover: hover) {
+  .l-rsvp {
+    margin: 80px 0px; } }
 @media (min-width: 1024px) {
   .l-rsvp {
     max-width: 800px;
@@ -410,6 +446,10 @@ form input[type="submit"] {
 @media (hover: hover) {
   .l-contact form {
     margin: 20px 0px; } }
+@media (min-width: 768px) and (hover: hover) {
+  .l-contact {
+    max-width: 768px;
+    margin: 0px auto; } }
 @media (min-width: 1024px) {
   .l-contact {
     max-width: 800px;
@@ -476,6 +516,18 @@ form input[type="submit"] {
   .l-registry__links a {
     max-width: 60%;
     padding: 15px 8px; } }
+@media (min-width: 768px) and (hover: hover) {
+  .l-registry {
+    margin: 80px 0px; }
+
+  .l-registry .l-honeyfund__button {
+    margin: 10px 0px 40px;
+    max-width: 250px; }
+
+  .l-registry__links a {
+    max-width: 250px;
+    padding: 15px 8px;
+    margin: 10px 0px 0px; } }
 @media (min-width: 1024px) {
   .l-registry {
     max-width: 800px;
@@ -529,6 +581,12 @@ svg {
 
   .logo h1 span {
     font-size: 88px; } }
+@media (min-width: 768px) and (hover: hover) {
+  .logo {
+    font-size: 24px; }
+
+  .logo h1 span {
+    font-size: 58px; } }
 @media (min-width: 1024px) {
   .header {
     background-size: 100%; }
@@ -581,6 +639,9 @@ svg {
 @media (min-width: 768px) {
   .navigation ul {
     font-size: 38px; } }
+@media (min-width: 768px) and (hover: hover) {
+  .navigation ul {
+    font-size: 24px; } }
 @media (min-width: 1024px) {
   .border--top {
     border-top: none; }
@@ -669,6 +730,21 @@ svg {
 
   .content p.accent {
     font-size: 4.5vw; } }
+@media (min-width: 768px) and (hover: hover) {
+  .content h1 {
+    font-size: 36px; }
+
+  .content h2 {
+    font-size: 32px; }
+
+  .content p {
+    font-size: 20px; }
+
+  .content p.accent {
+    font-size: 28px; }
+
+  .content span {
+    font-size: 24px; } }
 @media (min-width: 1024px) {
   body {
     background-color: #f7e6b9;
@@ -800,7 +876,35 @@ input[type="radio"] {
   input[type="submit"] {
     border: 4px dashed #5e2010;
     border-radius: 15px;
-    font-size: 54px; } }
+    font-size: 54px; }
+
+  input[type="submit"] {
+    border: 2px dashed #5e2010;
+    border-radius: 10px;
+    font-size: 32px;
+    padding: 10px 30px; } }
+@media (min-width: 768px) and (hover: hover) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border-radius: 10px;
+    border: 2px dashed #5e2010;
+    font-size: 24px; }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border: 2px solid #5e2010; }
+
+  .radio span {
+    font-size: 28px; }
+
+  .radio span::before {
+    border: 2px solid #5e2010;
+    border-radius: 4px; }
+
+  .radio span::after {
+    border-radius: 2px; } }
 @media (min-width: 1024px) {
   form {
     font-size: 18px; }
@@ -857,6 +961,10 @@ input[type="radio"] {
 
   .details p.accent {
     text-align: center; } }
+@media (min-width: 768px) and (hover: hover) {
+  .details ul li {
+    border: 2px dashed #491048;
+    border-radius: 10px; } }
 @media (min-width: 1024px) {
   .details ul li {
     border: 2px dashed #491048;
@@ -894,6 +1002,14 @@ input[type="radio"] {
   .registry__links a {
     border-top: 3px solid #5e2010;
     border-bottom: 3px solid #5e2010; } }
+@media (min-width: 768px) and (hover: hover) {
+  .registry .honeyfund__button {
+    border-top: 2px solid #5e2010;
+    border-bottom: 2px solid #5e2010; }
+
+  .registry__links a {
+    border-top: 2px solid #5e2010;
+    border-bottom: 2px solid #5e2010; } }
 @media (min-width: 1024px) {
   .registry .honeyfund__button {
     border-top: 2px solid #5e2010;

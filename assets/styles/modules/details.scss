@@ -25,6 +25,14 @@
 	}
 }
 
+@media (min-width: 768px) and (hover: hover){
+
+	.details ul li {
+		border: 2px dashed $darkPurple;
+		border-radius: 10px;
+	}
+}
+
 @media (min-width: 1024px){
 
 	.details ul li {
